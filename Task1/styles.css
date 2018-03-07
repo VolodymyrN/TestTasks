@@ -1,0 +1,152 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #35b0bc;
+  margin: 0; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .container .header {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .container .header .country {
+      width: 100%;
+      font-size: 50px;
+      font-weight: 700;
+      height: 50px; }
+    .container .header .description {
+      width: 700px;
+      font-size: 20px; }
+  .container .wrapper {
+    margin-top: 100px;
+    margin-bottom: 5%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; }
+    .container .wrapper .circle {
+      overflow: hidden;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      cursor: pointer; }
+      .container .wrapper .circle:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s; }
+    .container .wrapper .first-cube {
+      margin-left: 16%;
+      overflow: hidden;
+      width: 400px;
+      height: 320px;
+      cursor: pointer; }
+      .container .wrapper .first-cube:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s; }
+    .container .wrapper .second-cube {
+      margin-top: 16%;
+      overflow: hidden;
+      width: 400px;
+      height: 400px;
+      cursor: pointer; }
+      .container .wrapper .second-cube:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s; }
+    .container .wrapper .triangle {
+      margin-top: 16%;
+      margin-left: 16%;
+      overflow: hidden;
+      width: 400px;
+      height: 400px;
+      cursor: pointer; }
+      .container .wrapper .triangle:hover img {
+        opacity: 1;
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s; }
+      .container .wrapper .triangle #zeland_4 {
+        display: block;
+        -webkit-clip-path: polygon(35% 6%, 6% 95%, 66% 95%);
+        clip-path: polygon(35% 6%, 6% 95%, 66% 95%); }
+  .container img {
+    max-width: 600px; }
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+@keyframes flash {
+  0% {
+    opacity: .4; }
+  100% {
+    opacity: 1; } }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: #35b0bc; }
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px !important; }
+
+#caption {
+  margin: auto;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0; }
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s; }
+
+@keyframes zoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 70px;
+  transition: 0.3s; }
+  .close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer; }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

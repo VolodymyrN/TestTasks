@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World Nature</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <p class="country">New Zealand</p>
+        <p class="description">This project might be trickier than it seems.Look around carefully.
+        What you see? They sky is blue, the brass is greer. The sun shines through the window.</p>
+    </div>
+    <div class="wrapper">
+         <div class="circle" id="circleImg" onclick="myFunction(event)">
+             <img id="zeland_1" src="../images/new-zealand-3.jpg">
+         </div>
+         <div class="first-cube" id="fCubeImg" onclick="myFunction(event)">
+             <img id="zeland_2" src="../images/new-zealand-1.jpg">
+         </div>
+         <div class="second-cube" id="sCubeImg" onclick="myFunction(event)">
+             <img id="zeland_3" src="../images/new-zealand-2.jpg">
+         </div>
+        <div class="triangle" id="triangleImg" onclick="myFunction(event)">
+            <img id="zeland_4" src="../images/sun-rise-1.jpg">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div id="caption"></div>
+        <img class="modal-content" id="preview">
+    </div>
+</div>
+</body>
+</html>
